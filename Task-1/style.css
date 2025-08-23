@@ -10,6 +10,13 @@ body {
     color: white;
 }
 
+.menu-toggle {
+  display: none;             /* hide on desktop */
+  font-size: 1.8rem;         /* size of the hamburger */
+  color: white;              /* icon color */
+  cursor: pointer;           /* pointer cursor */
+}
+
 .navbar {
     width: 100%;
     display: flex;
@@ -19,7 +26,7 @@ body {
     padding: 25px 50px;
     position: fixed;
     top: 0;
-    background: #000000;
+    background: #d70000;
     /* dark background */
     z-index: 1000;
 
@@ -56,4 +63,34 @@ body {
     border-top: 3px solid rgb(225, 87, 2);
     font-size: 1.7rem;
 
+}
+
+
+
+
+/* Show only on small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;          /* show on mobile */
+  }
+
+  .navbar-ul {
+    display: none;           /* hide menu by default */
+    flex-direction: column;  /* vertical list */
+    background-color: #111;  /* dropdown background */
+    position: absolute;
+    top: 60px;               /* below navbar */
+    right: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .navbar-ul.active {
+    display: flex;           /* show menu when active */
+  }
+
+  .navbar-ul li {
+    margin: 15px 0;          /* spacing between links */
+  }
 }
