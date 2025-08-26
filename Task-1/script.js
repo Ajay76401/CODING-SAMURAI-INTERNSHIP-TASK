@@ -19,8 +19,8 @@ const typingText = [
     "Graphic Designer"
 ];
 
-const typingSpeed = 50; 
-const deletingSpeed = 50; 
+const typingSpeed = 150; 
+const deletingSpeed = 150; 
 const pauseAfterTyping = 2000; // Pause after the word is fully typed
 const pauseAfterDeleting = 500; // Pause after the word is fully deleted
 
