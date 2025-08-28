@@ -431,3 +431,83 @@ body {
   font-size: 1.4rem;
   color: rgb(173, 170, 170);
 }
+
+.btn-cv {
+  background-color: #e29d06;
+  margin: 1rem auto;
+  width: fit-content;
+
+}
+
+.btn-cv a {
+  text-decoration: none;
+  color: #111;
+  padding: 1rem 1rem;
+}
+
+.Project {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.project-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  justify-content: space-evenly;
+  /* background-color: red; */
+
+  width: 100%;
+}
+
+.pro-1 {
+  width: 30%;
+  border-radius: 20px;
+  margin-top: 2rem;
+  background-color: #e29d06;
+  margin: 2rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.pro-1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pro-1 img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  /* margin-bottom:2rem; */
+  text-align: center;
+  width: 100%;
+
+}
+
+.pro-1 p {
+  font-size: 2rem;
+  text-align: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+.more-pro {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 3rem 0; /* space for the content */
+  background-image: url("https://tse3.mm.bing.net/th/id/OIP.OGpZGEMVCq4G01aHyVCVXQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
