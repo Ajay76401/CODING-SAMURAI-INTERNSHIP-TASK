@@ -28,7 +28,9 @@ body {
   /* left + right */
   align-items: center;
   padding: 25px 50px;
-  position: relative;
+  position: fixed;
+  top: 0;
+
   background-color: rgba(0, 0, 0, 0.873);
   /* dark background */
   z-index: 1000;
@@ -119,7 +121,8 @@ body {
 .Home {
   width: 100%;
   display: flex;
-  margin: 3rem auto;
+  margin-top: 7rem;
+  /* margin: 3rem auto; */
 
 }
 
@@ -502,12 +505,88 @@ body {
 .more-pro {
   text-align: center;
   margin-top: 2rem;
-  padding: 3rem 0; /* space for the content */
+  margin-bottom: 2rem;
+  padding: 3rem 0;
+  /* space for the content */
   background-image: url("https://tse3.mm.bing.net/th/id/OIP.OGpZGEMVCq4G01aHyVCVXQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   position: relative;
   overflow: hidden;
+  color: rgb(225, 229, 233);
+}
+
+.more-main {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.more-main h1 {
+  font-size: 2.9rem;
+  margin: 2rem 0;
+}
+
+.more-main h1 span {
+  color: #e29d06;
+}
+
+.more-main h3 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 400;
+
+
+}
+
+.Contact {
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.contact-1 {
+  width: 23%;
+  /* background-color: #e29d06; */
+  text-align: center;
+}
+
+.contact-1 .icon {
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  margin: 1.5rem auto ;
+  color: #e29d06;
+
+}
+
+.con-back {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(196, 197, 198, 0.136);
+  border-radius: 50%;
+  margin: 1rem auto;
+  align-items: center;
+}
+.contact-1 h3{
+  font-size: 1.5rem;
+  margin: 2rem auto;
+}
+.contact-1 p{
+  font-size: 1.3rem ;
+  color: rgba(221, 221, 221, 0.479);
+
 }
