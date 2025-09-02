@@ -5,6 +5,7 @@ const mobileToggle = document.getElementById("mobile-menu")  // here we access t
 const navLinks = document.querySelector(".navbar-ul")        // Here we access nav-links
 
 mobileToggle.addEventListener("click", () => {        // we have use mobileToggle and added  addEventlisner is to maake changes on click .we also have used click here
+    console.log("HAmburger clicked")
     navLinks.classList.toggle("active")            // here we use navlinks variable .   classlist is used to access all element in navLinks  . Toggle is used can positive into neagtive nad negative into positive on click
 })
 

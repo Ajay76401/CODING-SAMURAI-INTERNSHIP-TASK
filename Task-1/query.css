@@ -33,35 +33,65 @@
 
 
 @media (max-width: 1024px) {
+
     .menu-toggle {
         display: block;
         /* show on mobile */
     }
 
+    .navbar {
+        overflow: visible !important;
+    }
+
     .navbar-ul {
         display: none;
-        /* hide menu by default */
+        /* hidden by default */
         flex-direction: column;
-        /* vertical list */
         background-color: #111;
         /* dropdown background */
         position: absolute;
-        width: 100%;
-        top: 80px;
+        /* make it float below navbar */
+        top: 70px;
+        /* adjust based on your navbar height */
         left: 0;
-        padding-left: 20px;
-        border-radius: 0;
-        gap: 1px;
+        width: 100%;
+        /* full width */
+        padding: 1rem 0;
+        gap: 0;
+        text-align: center;
+        /* center the links */
+        z-index: 9999;
     }
 
     .navbar-ul.active {
-        display: flex;
-        /* show menu when active */
+        display: flex !important;
+        /* show when active */
+        /* z-index: 2000; */
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+        /* allow dropdowns */
     }
 
     .navbar-ul li {
-        margin: 15px 100px;
-        /* spacing between links */
+        margin: 5px 0;
+        width: 100%;
+        align-items: center;
+        /* each item spans full width */
+    }
+
+    .navbar-ul li a {
+        display: block;
+        width: 100%;
+        /* padding: 1rem 0; */
+        font-size: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        /* optional divider */
+    }
+
+
+
+    .home-left {
+        padding-left: 3rem;
     }
 
     .name {
@@ -136,12 +166,109 @@
         background-color: rgba(0, 0, 0, 0.7);
         /* black with 40% opacity */
         background-blend-mode: darken;
+        margin: 0%;
+    }
+
+
+    .navbar {
+        padding: 15px 20px;
+        /* smaller padding */
     }
 
     .name {
-        text-align: center;
         padding-left: 0;
-        padding-top: 40px;
+        /* remove large padding */
+        text-align: center;
+    }
+
+    .navbar-ul li {
+        margin: 15px 20px;
+        /* avoid pushing too wide */
+    }
+}
+
+@media (max-width:731px) {
+    .channels span {
+        font-size: 1rem;
+        margin: 0 0.5rem;
 
     }
+
+    .channels .contact-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 0.5rem;
+        padding: 1rem;
+
+    }
+
+    .Contact {
+
+        margin: 3rem auto;
+    }
+
+    .contact-1 .icon {
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        margin: 0rem auto;
+        color: #e29d06;
+
+    }
+
+    .con-back {
+        width: 70px;
+        height: 70px;
+        background-color: rgba(196, 197, 198, 0.136);
+        border-radius: 50%;
+        margin: 1rem auto;
+        align-items: center;
+        display: flex;
+    }
+
+    .contact-1 h3 {
+        font-size: 1rem;
+        margin: 2rem auto;
+    }
+
+    .contact-1 p {
+        font-size: 0.7rem;
+        color: rgba(221, 221, 221, 0.479);
+
+    }
+
+}
+
+@media (max-width:425px) {
+    .brand-name h1 {
+       
+        font-size: 1.5rem;
+    }
+
+    .contact-1 {
+        width: 90%;
+        /* background-color: #e29d06; */
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    .channels span {
+        font-size: 0.8rem;
+        margin: 0 0.5rem;
+
+    }
+
+    .channels .contact-icon {
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        padding: 0.5rem;
+
+    }
+
+
+
+
+
+
 }
