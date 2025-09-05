@@ -22,8 +22,8 @@ a {
 
 body {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.649);
-  color: white;
+  background-color: rgb(0, 0, 0);
+  color: rgb(223, 217, 217);
   overflow-x: hidden;
 }
 
@@ -440,7 +440,8 @@ body {
 .btn-cv a {
   text-decoration: none;
   color: #111;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
+  font-size: 1.1rem;
 }
 
 .Project {
@@ -499,8 +500,6 @@ body {
 
 .more-pro {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   padding: 3rem 0;
   /* space for the content */
   background-image: url("https://tse3.mm.bing.net/th/id/OIP.OGpZGEMVCq4G01aHyVCVXQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
@@ -537,7 +536,7 @@ body {
 
 .Contact {
   width: 80%;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 .contact-title {
@@ -620,6 +619,6 @@ body {
 .footer {
   text-align: center;
   color: rgb(181, 182, 184);
-  padding: 4rem;
+  padding: 2rem;
   font-size: 1.3rem;
 }

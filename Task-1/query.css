@@ -24,12 +24,30 @@
     .home-right img {
         width: 90%;
     }
+
+    .edu-2 .date {
+        font-size: 1.3rem;
+
+    }
+
+    .edu-2 .position {
+        font-size: 1.3rem;
+        margin: 2rem 0;
+    }
+
+    .edu-2 .college {
+        margin: 1.4rem 0;
+        font-size: 1rem;
+    }
+
+    .edu-2 p {
+        margin: 1.8rem 0;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        color: rgb(173, 170, 170);
+    }
+
 }
-
-
-
-
-
 
 
 @media (max-width: 1024px) {
@@ -128,8 +146,39 @@
 
     .exp-2 {
         width: 80%;
-        margin: 4rem auto;
+        margin: 3rem auto;
     }
+
+    .exp-2 .date {
+        font-size: 1.5rem;
+    }
+
+    .exp-2 .position {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .exp-2 p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .exp-2 ul {
+        width: 80%;
+        margin: 1.3rem auto;
+        font-size: 0.9rem;
+
+    }
+
+    .exp-2 ul li {
+        margin-bottom: 0.9rem;
+
+    }
+
+
+
+
 
     .edu-1 {
         width: 100%;
@@ -149,6 +198,15 @@
         margin-right: 2rem;
         margin-top: 3rem;
     }
+
+    .more-main h1 {
+        font-size: 2rem;
+    }
+
+    .more-main h3 {
+        font-size: 1.7rem;
+    }
+
 
 }
 
@@ -185,6 +243,12 @@
         margin: 15px 20px;
         /* avoid pushing too wide */
     }
+
+    .more-main h3 {
+        font-size: 1.3rem;
+
+    }
+
 }
 
 @media (max-width:731px) {
@@ -239,9 +303,41 @@
 
 }
 
+@media (max-width:590px) {
+
+    .pro-1 {
+        width: 90%;
+    }
+
+    .education {
+        width: 95%;
+    }
+
+    .Contact {
+        width: 95%;
+    }
+
+    .Experience {
+        width: 95%;
+        margin: 3rem auto;
+    }
+
+    .Experience #exp-title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .exp-2 {
+        width: 95%;
+        margin: 2rem auto;
+    }
+
+
+}
+
 @media (max-width:425px) {
     .brand-name h1 {
-       
+
         font-size: 1.5rem;
     }
 
@@ -266,9 +362,84 @@
 
     }
 
+    .pro-1 p {
+        font-size: 1rem;
+        text-align: center;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .footer {
+
+        padding: 4rem;
+        font-size: 0.7rem;
+    }
+
+    .edu-1 {
+
+        margin: 0;
+    }
+
+    .edu-2 {
+
+        margin: 1.5rem auto;
+    }
+
+    .edu-2 .date {
+        font-size: 1rem;
+
+    }
+
+    .edu-2 .position {
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .edu-2 .college {
+        margin: 1rem 0;
+        font-size: 0.8rem;
+    }
+
+    .edu-2 p {
+        margin: 1.2rem 0;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: rgb(173, 170, 170);
+    }
+
+    #edu-title {
+        font-size: 3rem;
+    }
 
 
 
+
+    .exp-2 .date {
+        font-size: 1rem;
+    }
+
+    .exp-2 .position {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .exp-2 p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .exp-2 ul {
+        width: 90%;
+        margin: 1rem auto;
+        font-size: 0.7rem;
+
+    }
+
+    .exp-2 ul li {
+        margin-bottom: 0.9rem;
+
+    }
 
 
 }
