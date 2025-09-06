@@ -53,8 +53,8 @@ body {
   z-index: 1000;
   padding: 1.2rem 3rem;
 
-      overflow: visible !important;
-    
+  overflow: visible !important;
+
 
 }
 
@@ -110,7 +110,7 @@ body {
 .Home {
   width: 100%;
   display: flex;
-  margin-top: 7rem;
+  margin-top: 1rem;
   /* margin: 3rem auto; */
 
 }
@@ -209,6 +209,12 @@ body {
   ;
 }
 
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .About {
   width: 90%;
   margin: 6rem auto;
@@ -243,40 +249,41 @@ body {
 
 }
 
-.about-info {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
+
+
+.about-info2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  /* row-gap and column-gap */
+  width: 80%;
   margin: 1rem auto;
-
-
+  list-style: none;
+  /* remove bullets */
+  padding: 0;
+  text-align: center;
 }
 
-.about-info p {
-  font-size: 1.5rem;
-  margin: 1rem 0;
+.about-info2 li {
+  display: contents;
+  /* let spans take grid spots */
+  font-size: 1.2rem;
+  margin: 1rem 9rem;
 
+  /* justify-content: space-between; */
 }
 
-.about-topic {
-  width: 30%;
-
-}
-
-.about-topic p {
-  color: white;
+.about-info2 li span:first-child {
   font-weight: bold;
-  /* font-size: 1rem; */
+  text-align: left;
+  width: 200px;
 }
 
-.about-content {
-  width: 70%;
-  margin-left: 1rem;
+.about-info2 li span:last-child {
+  text-align: left;
+  width: 80%;
 }
 
-.about-content p {
-  color: rgb(222, 220, 220);
-}
 
 .Experience {
   width: 80%;
